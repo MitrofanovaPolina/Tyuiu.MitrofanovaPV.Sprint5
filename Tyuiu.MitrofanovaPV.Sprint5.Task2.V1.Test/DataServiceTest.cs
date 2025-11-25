@@ -1,4 +1,4 @@
-﻿using using Tyuiu.MitrofanovaPV.Sprint5.Task2.V1.Lib;
+﻿using Tyuiu.MitrofanovaPV.Sprint5.Task2.V1.Lib;
 namespace Tyuiu.MitrofanovaPV.Sprint5.Task2.V1.Test
 {
     [TestClass]
