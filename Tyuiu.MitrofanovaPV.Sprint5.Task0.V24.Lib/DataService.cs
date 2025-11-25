@@ -8,8 +8,8 @@ namespace Tyuiu.MitrofanovaPV.Sprint5.Task0.V24.Lib
         {
             string nam = "OutPutFileTask0.txt";
             string p = Path.Combine(Path.GetTempPath(), nam);
-            double y = (Math.Pow(x, 3) - 8) / (2 * (Math.Pow(x, 2)));
-            y = Math.Pow(y, 3);
+            double y = ((Math.Pow(x, 3)) - 8) / (2 * (Math.Pow(x, 2)));
+            y = Math.Round(y, 3);
             File.WriteAllText(p, Convert.ToString(y));
             return p;
         }
