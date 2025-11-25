@@ -19,7 +19,7 @@ namespace Tyuiu.MitrofanovaPV.Sprint5.Task1.V29.Lib
             string stry;
             for (int x = startValue; x <= stopValue; x++)
             {
-                y = (((Math.Sin(x))/(x+1.2)) + Math.Cos(x)*7*x -2);
+                y = Math.Round(((Math.Sin(x))/(x+1.2)) + Math.Cos(x)*7*x -2, 2);
                 stry = Convert.ToString(y);
                 if (x!=stopValue)
                 {
