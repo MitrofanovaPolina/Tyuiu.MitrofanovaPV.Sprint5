@@ -6,7 +6,7 @@
         [TestMethod]
         public void TestMethod1()
         {
-            string nam = @"C:\nn\InPutDataFileTask5V30.txt";
+            string nam = "InPutDataFileTask4V1.txt";
             string p = Path.Combine(Path.GetTempPath(), nam);
             FileInfo fileInfo = new FileInfo(nam);
             bool fileex = fileInfo.Exists;
