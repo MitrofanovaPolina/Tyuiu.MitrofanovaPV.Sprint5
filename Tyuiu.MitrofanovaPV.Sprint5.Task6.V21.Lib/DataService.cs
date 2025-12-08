@@ -13,7 +13,7 @@ namespace Tyuiu.MitrofanovaPV.Sprint5.Task6.V21.Lib
                 {
                     for (int i = 0; i < line.Length; i++)
                     {
-                        if (line[i] == 'т' && line[i + 1] == 'т')
+                        if (line[i] == 'т' | line[i] == 'Т' && line[i + 1] == 'т')
                         {
                             count++;
                         }
