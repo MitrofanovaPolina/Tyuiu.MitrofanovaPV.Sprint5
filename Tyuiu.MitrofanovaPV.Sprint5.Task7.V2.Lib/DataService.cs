@@ -6,9 +6,9 @@ namespace Tyuiu.MitrofanovaPV.Sprint5.Task7.V2.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            string d = "C:\\nn\\";
-            string nam = "OutPutDataFileTask7V2.txt";
-            string save = Path.Combine(d, nam);
+            string di = "C:\\DataSprint5\\";
+            string namm = "OutPutDataFileTask7V2.txt";
+            string save = Path.Combine(di, namm);
             FileInfo fileInfo = new FileInfo(save);
             bool fileex = fileInfo.Exists;
             if (fileex)
@@ -33,7 +33,7 @@ namespace Tyuiu.MitrofanovaPV.Sprint5.Task7.V2.Lib
                             strline = strline + line[i];
                         }
                     }
-                    File.AppendAllText(save,strline + Environment.NewLine);
+                    File.AppendAllText(save, strline + Environment.NewLine);
                     strline = "";
                 }
             }

@@ -5,12 +5,12 @@ class Program
     static void Main(string[] args)
     {
         DataService ds = new DataService();
-        string d = "C:\\nn\\";
-        string nam = "InPutDataFileTask7V2.txt";
-        string path = Path.Combine(d, nam);
-        string di = "C:\\nn\\";
+        string dii = "C:\\DataSprint5\\";
+        string nham = "InPutDataFileTask7V2.txt";
+        string path = Path.Combine(dii, nham);
+        string di = "C:\\DataSprint5\\";
         string namm = "OutPutDataFileTask7V2.txt";
-        string save = Path.Combine(d, nam);
+        string save = Path.Combine(di, namm);
         save = ds.LoadDataAndSave(path);
         Console.WriteLine(save);
         Console.ReadKey();
