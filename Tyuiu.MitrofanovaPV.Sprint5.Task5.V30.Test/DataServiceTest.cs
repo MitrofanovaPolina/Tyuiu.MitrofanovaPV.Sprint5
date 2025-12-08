@@ -6,11 +6,12 @@
         [TestMethod]
         public void TestMethod1()
         {
-            string nam = "InPutDataFileTask4V1.txt";
-            string p = Path.Combine(Path.GetTempPath(), nam);
-            FileInfo fileInfo = new FileInfo(nam);
-            int fileex = 3;
-            int wait = 3;
+            string d = "C:\\nn\\";
+            string nam = "InPutDataFileTask5V30.txt";
+            string p = Path.Combine(d, nam);
+            FileInfo fileInfo = new FileInfo(p);
+            bool fileex = fileInfo.Exists;
+            bool wait = true;
             Assert.AreEqual(wait, fileex);
         }
     
