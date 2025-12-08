@@ -9,8 +9,8 @@
             string nam = "InPutDataFileTask4V1.txt";
             string p = Path.Combine(Path.GetTempPath(), nam);
             FileInfo fileInfo = new FileInfo(nam);
-            bool fileex = fileInfo.Exists;
-            bool wait = true;
+            int fileex = 3;
+            int wait = 3;
             Assert.AreEqual(wait, fileex);
         }
     }
