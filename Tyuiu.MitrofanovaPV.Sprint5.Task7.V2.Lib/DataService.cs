@@ -6,9 +6,7 @@ namespace Tyuiu.MitrofanovaPV.Sprint5.Task7.V2.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            string di = "C:\\DataSprint5\\";
-            string namm = "OutPutDataFileTask7V2.txt";
-            string save = Path.Combine(di, namm);
+            string save = Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V2.txt");
             FileInfo fileInfo = new FileInfo(save);
             bool fileex = fileInfo.Exists;
             if (fileex)
@@ -23,7 +21,7 @@ namespace Tyuiu.MitrofanovaPV.Sprint5.Task7.V2.Lib
                 {
                     for (int i = 0; i < line.Length; i++)
                     {
-                        if ((line[i] == '1') | (line[i] == '2') | (line[i] == '3') | (line[i] == '4') | (line[i] == '5') | (line[i] == '6') | (line[i] == '7') | (line[i] == '8') | (line[i] == '9') | (line[i] == '0'))
+                        if ((line[i] == '1') || (line[i] == '2') || (line[i] == '3') || (line[i] == '4') || (line[i] == '5') || (line[i] == '6') || (line[i] == '7') || (line[i] == '8') || (line[i] == '9') || (line[i] == '0'))
                         {
                             
                             strline = strline + '#';

@@ -5,9 +5,8 @@ class Program
     static void Main(string[] args)
     {
         DataService ds = new DataService();
-        string dii = "C:\\DataSprint5\\";
-        string nham = "InPutDataFileTask7V2.txt";
-        string path = Path.Combine(dii, nham);
+        
+        string path = "C:/DataSprint5/InPutDataFileTask7V2.txt";
         
         
         Console.WriteLine(ds.LoadDataAndSave(path));
